@@ -1,0 +1,134 @@
+article {
+    padding: 30px;
+    line-height: 1.6;
+    background-color: #fffdf7;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: black;
+    border-bottom: 2px solid #e0c097;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+#values>ul {
+    padding-left: 20px;
+}
+
+#values>ul>li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#closingNote {
+    background-color: #f9f3eb;
+    padding: 20px;
+    border-left: 4px solid #d2b48c;
+}
+
+p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+/* Container */
+#pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* OWNER*/
+.owner {
+    width: 60%;
+    max-width: 700px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fffdf7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.owner-image {
+    width: 100%;
+    height: auto;
+    max-height: 425px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* STAFF */
+.staff {
+    width: 90%;
+    max-width: 900px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fffdf7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.staff-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.staff-image {
+    width: 48%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Caption*/
+.capt {
+    font-style: italic;
+    color: #444;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .owner {
+        width: 90%;
+    }
+
+    .staff {
+        width: 95%;
+    }
+
+    .staff-image {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .staff-list {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1801px){
+    p{
+        font-size: 25px;
+
+    }
+   
+    #values>ul>li{
+        font-size: 25px;
+    }
+}

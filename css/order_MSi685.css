@@ -1,0 +1,199 @@
+p#order{
+    font-size: 20px;
+}
+
+#productSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .item:hover {
+    transform: scale(1.03);
+  }
+  
+  .prodimg {
+    width: 100%;
+    height: 275px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 20px;
+    color: brown;
+    font-weight: bold;
+    margin: 6px 0;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: brown;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .item {
+      width: 100%;
+    }
+  }
+  
+  input[type="button"]{
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid black;
+
+  }
+  input[type="button"]:hover{
+    transform: scale(1.03);
+  }
+  #orderPlacement>input[type="button"]{
+    background-color: aquamarine;
+    padding: 10px 20px;
+  font-size: 28px;
+  max-width: 100%;
+  border:2px solid black;
+  }
+  
+  #orderPlacement{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #coupon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #order{
+  margin-left: 10px;
+}
+  
+#coupontext{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  #couponInput{
+    height:2.5em;
+    width:300px;
+    margin-left: 10px;
+  }
+
+  #applyCoupon{
+    margin-left: 10px;
+    padding:10px;
+    width: fit-content;
+  }
+   #coupon>input[type="button"]{
+    background-color: aquamarine;
+    border: 2px solid black;
+margin-top: 5px;
+   }
+
+
+  #detailsForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+  #detailsForm>legend{
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+  form#personDetails>div#detailSubmit>input[type="submit"]{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+border: 2px solid brown;
+color: white;
+  }
+
+    form#personDetails>div#detailSubmit>input[type="submit"]:hover{
+      transform: scale(1.03);
+    }
+
+   div#detailSubmit{
+    text-align: center;
+
+   }
+   
+   p{
+    font-size: 20px;
+   }
+ #personAdd{
+  height:3.5em;
+ }
+  
+@media screen and (min-width:1801px){
+  p#order{
+    font-size: 25px;
+  }
+  p#coupontext{
+    font-size: 25px;
+  }
+  #detailsForm{
+    font-size: 25px;
+  }
+  #applyCoupon{
+    font-size: 25px;
+  }
+  .person {
+    height: 2.5em; 
+  }
+  #personAdd{
+    height:4em;
+  }
+  form#personDetails>div#detailSubmit>input[type="submit"]{
+    font-size: 25px;
+  }
+  p{
+    font-size: 25px;
+  }
+  input[type="button"]{
+    
+    font-size: 25px;
+    
+
+  }
+  .title{
+    font-size: 25px;
+  }
+  .price{
+    font-size: 25px;
+  }
+}
+     
