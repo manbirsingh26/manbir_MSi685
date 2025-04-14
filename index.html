@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="manbir" />
+    <link rel="stylesheet" href="./css/Project_MSi685.css" />
+    <link rel="stylesheet" href="./css/nav_MSi685.css" />
+    <script src="./script/Project_MSi685.js"></script>
+    <!--I am using chart.js to make a chart in my homepage-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Coffee Shop☕</title>
+  </head>
+  <body>
+    <header>
+      <h1>Manbir's Coffee House</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./page2_MSi685.html">ORDER</a></li>
+        <li><a href="./page3_MSi685.html">CONTACT</a></li>
+        <li><a href="./page4_MSi685.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <article>
+      <div id="image">
+        <span>
+          <em
+            >"Come And Drink Our Coffee, Prepared For You With Love And Served
+            With Passion."</em
+          >
+        </span>
+      </div>
+      <br />
+      <p id="brief">
+        👉At Manbir's Coffee House, we serve the freshly brewed coffee with the
+        finest beans sourced globally. Whether you love a sizzling hot coffee or
+        a chilled cold coffee, we always have something special available for
+        you!😊
+        <a href="./page4_MSi685.html">Learn More</a>
+      </p>
+
+      <br />
+      <h2>Our Top Selling Items</h2>
+      <div id="items">
+        <ol>
+          <li>French Vanilla</li>
+          <!--Source:- https://images.pexels.com/photos/685527/pexels-photo-685527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
+          <img src="./images/french.jpeg" alt="frenchVanilla" class="top" />
+          <br />
+          <p>
+            <em
+              >"A smooth and aromatic coffee infused with the rich, creamy
+              flavour of French vanilla.Perfectly balanced for a velevety and
+              sweet experience in every sip you take."</em
+            >
+          </p>
+          <br />
+          <br />
+          <li>Black Coffee</li>
+          <!--Source:- https://images.pexels.com/photos/1011292/pexels-photo-1011292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
+          <img src="./images/black_coffee.jpeg" alt="blackCoffee" class="top" />
+          <br />
+          <p>
+            <em
+              >"Strong and energizing, our Black Coffee is a rich, fragrant
+              beverage with a silky but powerful essence. A genuine and
+              everlasting standard for real coffee lovers."</em
+            >
+          </p>
+          <br />
+          <br />
+          <li>Mocha Iced Capp</li>
+          <!--Source:- https://images.pexels.com/photos/24294335/pexels-photo-24294335/free-photo-of-coffee-with-straw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
+          <img src="./images/iced.jpeg" alt="iced" class="top" />
+          <br />
+          <p>
+            <em
+              >"Our Mocha Iced Capp is a perfect combination of smooth, creamy luxury, strong espresso, and rich choclate with the required
+              balance of energy and coolness"</em
+            >
+          </p>
+        </ol>
+      </div>
+      <br />
+      <h2>Customer Reviews</h2>
+      <div id="reviews">
+        <p>
+          Have a look at what some of our customers say about our coffee below⤵️
+        </p>
+
+        <div class="review">
+          <p>⭐⭐⭐⭐⭐</p>
+
+          <p>
+            "Their French Vanilla was the best which I've ever had. So
+            delicious!"
+          </p>
+          <small>- Jason Ruso</small>
+        </div>
+        <div class="review">
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            "The mocha iced capp is my favourite on hot days. It's absolutely
+            very chilled and tasty"
+          </p>
+          <small>- Will Santher</small>
+        </div>
+        <div class="review">
+          <p>⭐⭐⭐⭐✰</p>
+          <p>
+            "Most of their coffee flavours are pretty good.I just don't like
+            cold brew."
+          </p>
+          <small>- Jasmine</small>
+        </div>
+        <div class="review">
+          <p>⭐⭐⭐⭐✰</p>
+          <p>
+            "This place has required amount of clealiness.Also their staff is
+            quite respectful and polite. I think only problem is that overall
+            space is not very big."
+          </p>
+          <small>- Bruto Andreas</small>
+        </div>
+      </div>
+      <br />
+      <h2>Check out our menu📜</h2>
+      <div id="action">
+        <p>
+          Apart from our top selling items mentioned above, we have variety of
+          other options available also.
+        </p>
+        <p>
+          We also provide exicting discounts. Enter the coupon
+          <strong>"LESS20"</strong> on ordering page to get 20% discount on your
+          order.
+        </p>
+        <p>
+          You can check out all the options and order accordingly
+          <a href="./page2_MSi685.html">by clicking here</a>
+        </p>
+      </div>
+      <br />
+      <h2>Our Workforce👨‍🍳</h2>
+      <div id="workers">
+        <p>
+          We make sure that all genders get representation in our workforce. We
+          have around total 200 employees at all of our shops.
+        </p>
+
+        <div id="chart">
+          <canvas id="myGraph"></canvas>
+        </div>
+        <br />
+        <p>
+          Take a look at how one of our barista prepares a perfect cup of coffee
+          just for you:
+        </p>
+        <br />
+
+        <iframe
+          src="https://www.youtube.com/embed/Z7e8tmcSrxg?si=a5t8Lh9Bf1UQtROi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+      <br />
+      <h2>Why we love our work❤️</h2>
+      <div id="facts">
+        <div class="fact">
+          <p class="logo">☕</p>
+          <p class="counter" data-target="990">0</p>
+          <p class="fact-label">Cups of Coffee Served Daily</p>
+        </div>
+        <div class="fact">
+          <p class="logo">👨‍🍳</p>
+          <p class="counter" data-target="200">0</p>
+          <p class="fact-label">Expert Baristas</p>
+        </div>
+        <div class="fact">
+          <p class="logo">🏆</p>
+          <p class="counter" data-target="4.8">0</p>
+          <p class="fact-label">Overall rating from 1,100+ customers</p>
+        </div>
+      </div>
+      <br />
+      <h2>Opening and Closing Hours</h2>
+
+      <ol id="locations_list">
+        <p>We have the branches at following three locations:-</p>
+        <li>
+          <a href="https://maps.app.goo.gl/29qu6EudDyS56YNu5" target="_blank"
+            >Surrey</a
+          >
+        </li>
+        <li>
+          <a href="https://maps.app.goo.gl/XoJGYXntNZAbX7SY9" target="_blank"
+            >New WestMinster</a
+          >
+        </li>
+        <li>
+          <a href="https://maps.app.goo.gl/eJGBqytwvwD8rsbo9" target="_blank"
+            >Newton</a
+          >
+        </li>
+      </ol>
+      <div id="hours">
+        <h2>🕒Business Hours</h2>
+        <span>Come visit us any day of the week at any of our branch!</span>
+
+        <div class="hoursData">
+          <div class="days">
+            <p class="day">📅 Monday</p>
+            <p class="time">8:00 AM – 9:00 PM</p>
+          </div>
+          <div class="days">
+            <p class="day">📅 Tuesday</p>
+            <p class="time">8:00 AM – 9:00 PM</p>
+          </div>
+          <div class="days">
+            <p class="day">📅 Wednesday</p>
+            <p class="time">8:00 AM – 9:00 PM</p>
+          </div>
+          <div class="days">
+            <p class="day">📅 Thursday</p>
+            <p class="time">8:00 AM – 9:00 PM</p>
+          </div>
+          <div class="days">
+            <p class="day">📅 Friday</p>
+            <p class="time">8:00 AM – 10:00 PM</p>
+          </div>
+          <div class="days">
+            <p class="day">📅 Saturday</p>
+            <p class="time">9:00 AM – 11:00 PM</p>
+          </div>
+          <div class="days">
+            <p class="day">📅 Sunday</p>
+            <p class="time">12:00 AM - 8:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>Have a question for us?</h2>
+      <div id="question">
+        <p id="waysConnect">
+          <a href="./page3_MSi685.html">Click here</a> to go to our contact page
+          where you can find ways to contact us to get answer to any of your
+          question.
+        </p>
+      </div>
+
+      <br />
+      <h2>Connect With Us</h2>
+      <p id="psocial">
+        Follow us on our social media platforms to learn about latest updates
+        and offers
+      </p>
+      <div id="socialMedia">
+        <div class="social">
+          <p>
+            <a
+              href="https://www.instagram.com/_singh_manbir_26_23?igsh=Y2FqNmphbHZsb2hy"
+              target="_blank"
+              ><img
+                src="./images/instagram.svg"
+                width="50px"
+                height="50px"
+                alt="instagram"
+                target="_blank"
+            /></a>
+          </p>
+        </div>
+        <div class="social">
+          <p>
+            <a
+              href="https://www.facebook.com/share/15Yugzry6m/"
+              target="_blank"
+            >
+              <img
+                src="./images/facebook.svg"
+                width="50px"
+                height="50px"
+                alt="facebook"
+              />
+            </a>
+          </p>
+        </div>
+        <div class="social">
+          <p>
+            <a
+              href="https://www.youtube.com/@manbirsingh./playlists"
+              target="_blank"
+            >
+              <img
+                src="./images/youtube.svg"
+                width="50px"
+                height="50px"
+                alt="youtube"
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <p id="footLink">
+        <a href="#">Back to top</a>
+      </p>
+      <p id="foot">
+        <em>Manbir's Coffee House &copy; 2025. All rights reserved.</em>
+      </p>
+    </footer>
+  </body>
+</html>

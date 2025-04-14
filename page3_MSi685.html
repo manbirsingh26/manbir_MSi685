@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="manbir" />
+    <link rel="stylesheet" href="./css/Project_MSi685.css" />
+    <link rel="stylesheet" href="./css/nav_MSi685.css" />
+    <link rel="stylesheet" href="./css/contact_MSi685.css" />
+    <script src="./script/contact_MSi685.js"></script>
+    <title>Coffee Shop☕</title>
+  </head>
+  <body>
+    <header>
+      <h1>Manbir's Coffee House</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./page2_MSi685.html">ORDER</a></li>
+        <li><a href="./page3_MSi685.html">CONTACT</a></li>
+        <li><a href="./page4_MSi685.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h2>Contact us directly below:-</h2>
+      <br />
+      <p>
+        Email:
+        <a href="mailto:manbirveer5875@gmail.com">manbircoffee@gmail.com</a>
+      </p>
+      <p>Phone No: <a href="tel:+16047491422">+1 (604) 749-1422</a></p>
+      <br />
+      <h2>
+        Alternatively, you can also fill out and submit the following form:-
+      </h2>
+      <br />
+      <form name="myform" action="" method="get">
+        <fieldset id="mainfield">
+          <legend>Contact Form</legend>
+          <div>
+            <label for="name"> Your Name</label>
+            <input
+              type="text"
+              placeholder="Jason Roy"
+              id="name"
+              name="name"
+              ="20"
+              required
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="phonenumber">Phone Number</label>
+            <input
+              type="text"
+              placeholder="+1604456234"
+              id="phonenumber"
+              name="phonenumber"
+              pattern="^\+1\d{10}$"
+              maxlength="12"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required>
+              <option value="">--Select the subject--</option>
+              <option value="Order Realted Issue">Order Realted Issues</option>
+              <option value="Franchise Realed Inquiry">
+                Franchise Realed Inquiry
+              </option>
+              <option value="Coffee Quality Issue">Coffee Quality Issue</option>
+              <option value="Complain Regarding Something">
+                Complain Regarding Something
+              </option>
+              <option value="Other..">Other..</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="query">How we can help you?</label>
+            <textarea id="query" name="query" rows="10" required></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit Data"
+            onclick="return displayvalues(this.form)"
+          /><input type="reset" value="Clear Input" />
+        </fieldset>
+      </form>
+      <div id="outputvalues"></div>
+    </article>
+    <footer>
+      <p id="footLink">
+        <a href="#">Back to top</a>
+      </p>
+      <p id="foot">
+        <em>Manbir's Coffee House &copy; 2025. All rights reserved.</em>
+      </p>
+    </footer>
+  </body>
+</html>
