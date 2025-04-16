@@ -87,6 +87,8 @@ function displayvalues(form){
         target.style.margin = "0 auto";
         target.style.borderRadius= "22px";
         form.reset();
+        form.innerHTML = "";
+        document.getElementById("formH2").innerHTML = "";
         return false;
     }
 }
